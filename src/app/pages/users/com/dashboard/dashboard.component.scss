@@ -1,0 +1,82 @@
+.df {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  font-weight: 700;
+  // color: #000000;
+  color: rebeccapurple;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+
+  .stitle {
+    align-self: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+    // color: rebeccapurple;
+  }
+  .smain {
+    font-size: 24px;
+  }
+
+  // &:hover {
+  //   background: #052b35;
+  // }
+}
+
+.va {
+  vertical-align: -0.3em;
+}
+
+.logo {
+  height: 40px;
+  // width: 50px;
+}
+
+.wd{
+  width: 30%;
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+  .wd{
+    width: 100%;
+  }
+}
+
+.card-t {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.cont {
+  display: flex;
+  padding: 20px;
+  //   margin-bottom: 25px;
+  //   background: #fff;
+  //   border-radius: 10px;
+  flex-direction: column;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-weight: 500;
+  // color: rebeccapurple;
+}

@@ -1,0 +1,153 @@
+
+<div class="login-container">
+  <div class="login-inner-content container-fluid container-md mt-4">
+    <div class="row justify-content-around heading-register p-v-30">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <h2 class="col-sm-12 text-center"> CREATE YOUR ACCOUNT </h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-around p-t-20">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <form nz-form [formGroup]="registerForm" class="pt-sm-20 p-b-20">
+          <div class="form-control-wrapper m-v-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="email"
+              nz-input
+              placeholder="Email"
+            />
+          </div>
+
+          <!-- <div class="form-control-wrapper m-v-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="firstName"
+              nz-input
+              placeholder="First Name"
+            />
+          </div>
+
+          <div class="form-control-wrapper m-v-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="lastName"
+              nz-input
+              placeholder="Last Name"
+            />
+          </div>
+
+          <div class="form-control-wrapper m-v-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="phoneNumber"
+              nz-input
+              placeholder="Phone Number"
+            />
+          </div> -->
+
+          <div class="form-control-wrapper m-b-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="bvn"
+              nz-input
+              placeholder="BVN"
+            />
+          </div>
+
+          <div class="form-control-wrapper m-b-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="dateOfBirth"
+              nz-input
+              placeholder="Date Of Birth"
+            />
+          </div>
+
+          <!-- <div class="form-control-wrapper m-b-30">
+           
+            <textarea
+              formControlName="address"
+              nz-input
+              rows="4"
+              placeholder="Address"
+            ></textarea>
+          </div> -->
+<!-- 
+          <div class="form-control-wrapper m-b-30">
+            <span
+            nz-icon
+            nzType="lock"
+            nzTheme="outline"
+            class="icons-1"
+          ></span>
+            <input
+              type="text"
+              formControlName="password"
+              nz-input
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="form-control-wrapper">
+            <span
+              nz-icon
+              nzType="lock"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="confirmPassword"
+              nz-input
+              placeholder="Confirm Password"
+            />
+          </div> -->
+        </form>
+      </div>
+    </div>
+
+    <div class="row justify-content-around">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <button class="bt-4" nz-button (click)="submitForm()">Create Account</button>
+      </div>
+    </div>
+  </div>
+
+</div>

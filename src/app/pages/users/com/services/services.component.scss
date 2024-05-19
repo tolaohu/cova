@@ -1,0 +1,23 @@
+nz-avatar {
+  width: 200px;
+  height: auto;
+}
+
+.cova-background {
+  background-color: #383083;
+}
+
+.cova-text {
+  color: #383083;
+}
+
+.cova-secondary {
+  color: #faf9f6;
+}
+
+@media screen and (max-width: 576px) {
+  nz-avatar {
+    width: 100px;
+    height: auto;
+  }
+}

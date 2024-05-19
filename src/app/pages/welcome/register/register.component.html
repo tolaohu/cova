@@ -1,0 +1,145 @@
+<div class="bg p-b-50" *ngIf="false" >
+    <div class="row justify-content-around p-t-100">
+        <div class="col-12 d-flex flex-column align-items-center">
+            
+        <img src="assets/image/icons/cova.png" class="logo" alt="">
+        <h1> Welcome !</h1>
+        </div>
+    </div>
+
+    
+    <div class="row justify-content-around p-t-50">
+        <div class="col-12 d-flex flex-column align-items-center">
+            <form
+              nz-form
+              [formGroup]="registerForm"
+              class="pt-sm-20 p-b-20"
+            >
+              <input type="text" formControlName="username" nz-input placeholder="Username" class="m-b-30">
+              <input type="text" formControlName="bvn" nz-input placeholder="BVN" class="m-b-30">
+              <input type="password" formControlName="password" nz-input placeholder="Password" class="m-b-30">
+              <input type="password" formControlName="confirmPassword" nz-input placeholder="Confirm Password" class="m-b-30">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="row justify-content-around p-t-50">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <button class="bt1" nz-button>Login</button>
+          <small> Forgot Password  </small>
+        </div>
+    </div>
+
+    <div class="row justify-content-around p-t-50">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <button class="bt2" nz-button>Create</button>
+          <small> Don't Have an Account ? </small>
+        </div>
+    </div>
+
+    <div class="row justify-content-around p-t-50">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <small> www.cova.org </small>
+        </div>
+    </div>
+</div>
+
+<div class="login-container">
+  <div class="login-inner-content">
+    <!-- <div class="row justify-content-around" >
+      <div class="col-12 d-flex flex-column align-items-center">
+        <img src="assets/image/icons/cova.png" class="logo" alt="" />
+        <h5>Welcome !</h5>
+      </div>
+    </div> -->
+
+    <div class="row justify-content-around heading-register p-v-30">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <h2> CREATE YOUR ACCOUNT </h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-around p-t-20">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <form nz-form [formGroup]="registerForm" class="pt-sm-20 p-b-20">
+          <div class="form-control-wrapper m-v-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="username"
+              nz-input
+              placeholder="Username"
+            />
+          </div>
+
+          <div class="form-control-wrapper m-b-30">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="bvn"
+              nz-input
+              placeholder="BVN"
+            />
+          </div>
+
+          <div class="form-control-wrapper m-b-30">
+            <span
+            nz-icon
+            nzType="lock"
+            nzTheme="outline"
+            class="icons-1"
+          ></span>
+            <input
+              type="text"
+              formControlName="password"
+              nz-input
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="form-control-wrapper">
+            <span
+              nz-icon
+              nzType="lock"
+              nzTheme="outline"
+              class="icons-1"
+            ></span>
+            <input
+              type="text"
+              formControlName="confirmPassword"
+              nz-input
+              placeholder="Confirm Password"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row justify-content-around">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <button class="bt-4" nz-button (click)="submitForm()">Create Account</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+   
+    <!-- <div class="row justify-content-around bg-white">
+      <div class="col-12 d-flex align-items-center justify-content-between">
+        <span class="spanText">Don't have an account?</span>
+        <span class="spanText fg" routerLink="/welcome/register">Create an account</span>
+      </div>
+    </div> -->
+</div>

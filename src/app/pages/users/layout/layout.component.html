@@ -1,0 +1,9 @@
+<nz-layout class="app-layout">
+  <nz-content>
+    <app-header (showSide)="onShowSide($event)"></app-header>
+    <app-side-nav [showSide]="isExpand"></app-side-nav>
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
+</nz-layout>

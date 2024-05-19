@@ -1,0 +1,63 @@
+<div id="side-nav" [ngClass]="{ left: showSide === true }">
+  <div class="document-settings-header" *ngIf="false">
+    <h6 class="">Settings</h6>
+
+    <div matRipple class="" (click)="closeDialog()">
+      <img src="/assets/icons/modal-close-icon.svg" alt="modal close icon" />
+    </div>
+  </div>
+
+  <div class="side-menu">
+    <a
+      class="font-size-16 align-items-center side-menu-item"
+      routerLink="/users/dashboard"
+      routerLinkActive="active"
+    >
+      <img src="assets/image/icons/icons/Home.svg" alt="" class="m-r-15" />
+      <span>Dashboard</span>
+    </a>
+
+    <a
+      class="font-size-16 align-items-center side-menu-item"
+      routerLink="/users/profile"
+      routerLinkActive="active"
+    >
+      <img src="assets/image/icons/icons/Home.svg" alt="" class="m-r-15" />
+      <span>Profile</span>
+    </a>
+
+    <a
+      class="font-size-16 align-items-center side-menu-item"
+      routerLink="/users/services"
+      routerLinkActive="active"
+    >
+      <img src="assets/image/icons/icons/Home.svg" alt="" class="m-r-15" />
+      <span>Services</span>
+    </a>
+
+    <a
+      class="font-size-16 align-items-center side-menu-item"
+      routerLinkActive="active"
+      routerLink="/users/settings"
+    >
+      <!-- <img src="assets/image/icons/icons/Home.svg" alt="" class="m-r-15"> -->
+      <svg
+        class="m-r-15"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12"
+        ></path>
+        <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4"></path>
+      </svg>
+      <span>Settings</span>
+    </a>
+  </div>
+</div>

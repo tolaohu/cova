@@ -1,0 +1,37 @@
+nz-avatar {
+  width: 200px;
+  height: auto;
+}
+
+.text {
+  background: linear-gradient(145deg, #00b8d6, #00a686);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.text-muted-small {
+  font-size: 0.875rem;
+  color: #9399a1;
+}
+
+.cova-background {
+  background-color: #383083;
+}
+
+.cova-text {
+  color: #383083;
+}
+
+.cova-secondary {
+  color: #faf9f6;
+}
+
+@media screen and (max-width: 576px) {
+  nz-avatar {
+    width: 100px;
+    height: auto;
+  }
+}

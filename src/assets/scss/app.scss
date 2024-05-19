@@ -1,0 +1,123 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_reset.scss';
+
+/*******************/
+/*** Components ***/
+/*****************/
+
+/*General*/
+@import './components/general/_typorgraphy.scss';
+@import './components/general/_buttons.scss';
+@import './components/general/_icons.scss';
+
+
+/*Navigation*/
+@import './components/navigation/_affix.scss';
+@import './components/navigation/_breadcrumb.scss';
+@import './components/navigation/_dropdown.scss';
+@import './components/navigation/_menu.scss';
+@import './components/navigation/_pagination.scss';
+@import './components/navigation/_page-header.scss';
+@import './components/navigation/_steps.scss';
+
+/*Data Entry*/
+@import './components/data-entry/_autocomplete.scss';
+@import './components/data-entry/_cascader.scss';
+@import './components/data-entry/_checkbox.scss';
+@import './components/data-entry/_date-picker.scss';
+@import './components/data-entry/_form.scss';
+@import './components/data-entry/_input.scss';
+@import './components/data-entry/_mention.scss';
+@import './components/data-entry/_radio.scss';
+@import './components/data-entry/_rate.scss';
+@import './components/data-entry/_select.scss';
+@import './components/data-entry/_slider.scss';
+@import './components/data-entry/_switch.scss';
+@import './components/data-entry/_time-picker.scss';
+@import './components/data-entry/_transfer.scss';
+@import './components/data-entry/_tree-select.scss';
+@import './components/data-entry/_upload.scss';
+
+/*Data Display*/
+@import './components/data-display/_avatar.scss';
+@import './components/data-display/_badge.scss';
+@import './components/data-display/_calendar.scss';
+@import './components/data-display/_card.scss';
+@import './components/data-display/_carousel.scss';
+@import './components/data-display/_collapse.scss';
+@import './components/data-display/_list.scss';
+@import './components/data-display/_popover.scss';
+@import './components/data-display/statistic.scss';
+@import './components/data-display/_table.scss';
+@import './components/data-display/_tabs.scss';
+@import './components/data-display/_tag.scss';
+@import './components/data-display/_timeline.scss';
+@import './components/data-display/_tooltip.scss';
+@import './components/data-display/_tree.scss';
+
+/*Feedback*/
+@import './components/feedback/_alert.scss';
+@import './components/feedback/_drawer.scss';
+@import './components/feedback/_message.scss';
+@import './components/feedback/_modal.scss';
+@import './components/feedback/_notifications.scss';
+@import './components/feedback/_progress.scss';
+@import './components/feedback/_spin.scss';
+
+/*Other*/
+@import './components/others/anchor.scss';
+// @import './components/others/back-to-top.scss';
+// @import './components/others/divider.scss';
+
+/******************/
+/*** Template ****/
+/****************/
+// @import './template/_header.scss';
+// @import './template/_layout.scss';
+// @import './template/_side-nav.scss';
+// @import './template/_footer.scss';
+
+/*****************/
+/***** Apps *****/
+/***************/
+// @import './apps/chat.scss';
+// @import './apps/file-manager.scss';
+// @import './apps/mail.scss';
+// @import './apps/e-commerce.scss';
+
+/*****************/
+/*** Plugins ****/
+/***************/
+// @import './plugins/chartist.scss';
+// @import './plugins/quill.scss';
+
+/*******************/
+/*** Utilities ****/
+/*****************/
+@import './utilities/_utilities-bs.scss';
+@import './utilities/_utilities-enlink.scss';
+
+/*******************/
+/****** Demo ******/
+/*****************/
+
+// @import './demo/_demo.scss';
+
+.row {
+  margin: 0;
+}
+
+.ant-btn {
+  text-transform: capitalize !important;
+}
+
+.ant-select-disabled {
+  color: rgba(83, 83, 95, 1) !important;
+  background-color: #dfd7d7 !important;
+}
+
+.ant-input:disabled {
+  color: rgba(83, 83, 95, 1) !important;
+  background-color: #dfd7d7 !important;
+}
