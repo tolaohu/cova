@@ -13,9 +13,19 @@ import { ProfileComponent } from './com/profile/profile.component';
 import { WalletComponent } from './com/wallet/wallet.component';
 import { SettingsComponent } from './com/settings/settings.component';
 import { ServicesComponent } from './com/services/services.component';
+import { UserService } from './service/user.service';
 
 @NgModule({
-  declarations: [DashboardComponent, LayoutComponent, HeaderComponent, SideNavComponent, ProfileComponent, WalletComponent, SettingsComponent, ServicesComponent],
+  declarations: [
+    DashboardComponent,
+    LayoutComponent,
+    HeaderComponent,
+    SideNavComponent,
+    ProfileComponent,
+    WalletComponent,
+    SettingsComponent,
+    ServicesComponent,
+  ],
   imports: [
     CommonModule,
     UsersRoutingModule,
@@ -23,5 +33,6 @@ import { ServicesComponent } from './com/services/services.component';
     NzDropDownModule,
     NzBadgeModule,
   ],
+  providers: [UserService],
 })
 export class UsersModule {}

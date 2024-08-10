@@ -55,6 +55,7 @@ export class UserService {
         token: `sk_live_e8p1w28tRRMAEPwP38tPXKkqdgNL0bmpb94ojBGM5CCWoq4b`,
         'X-Access-Token': this.access ? this.access : '',
         'X-Refresh-Token': this.refresh ? this.refresh : '',
+        'Access-Control-Allow-Origin': '*',
       }),
       observe: 'response',
     });

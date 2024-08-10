@@ -78,7 +78,7 @@ nz-header {
   margin-left: 230px;
   padding: 125px 25px 25px;
   overflow-x: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media screen and (max-width:576px) {
