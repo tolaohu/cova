@@ -13,14 +13,16 @@
             ></nz-avatar>
 
             <div class="ms-3">
-              <h4 class="mb-0 text-white">Hello, Adebayo!</h4>
-              <span class="text-muted-small text-white"
-                >Adebayo.Adesanya@gmail.com</span
-              >
-              <p class="mb-0 mt-xl-4 mt-3 text-muted-small">
+              <h4 class="mb-0 text-white">
+                Hello, {{ userWallet?.firstName }}!
+              </h4>
+              <span class="text-muted-small text-white">{{
+                userWallet?.email
+              }}</span>
+              <!-- <p class="mb-0 mt-xl-4 mt-3 text-muted-small">
                 "Power up your web app with our sleek cova admin dashboard
                 template.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -31,14 +33,16 @@
             <li class="list-inline-item">
               <h6 class="mb-0 mt-1">
                 <span class="align-middle text-white">First Name: </span>
-                <span class="fw-bold cova-secondary"><span>Adebayo</span></span>
+                <span class="fw-bold cova-secondary"
+                  ><span>{{ userWallet?.firstName }}</span></span
+                >
               </h6>
             </li>
             <li class="list-inline-item">
               <h6 class="mb-0 mt-1">
                 <span class="align-middle text-white">Last Name: </span>
                 <span class="fw-bold cova-secondary"
-                  ><span>Adesanya</span></span
+                  ><span>{{ userWallet?.lastName }}</span></span
                 >
               </h6>
             </li>
@@ -46,7 +50,7 @@
               <h6 class="mb-0 mt-1">
                 <span class="align-middle text-white">Email: </span>
                 <span class="fw-bold cova-secondary"
-                  ><span>AdebayoAdesanya@gmail.com</span></span
+                  ><span>{{ userWallet?.email }}</span></span
                 >
               </h6>
             </li>

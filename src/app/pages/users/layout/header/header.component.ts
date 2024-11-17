@@ -1,10 +1,17 @@
-import { Component, EventEmitter, Output, Renderer2, ViewChild, ViewContainerRef } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Output,
+  Renderer2,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 import { SideNavComponent } from '../side-nav/side-nav.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   isAuthenticated = false;
@@ -12,12 +19,14 @@ export class HeaderComponent {
   quickViewVisible = false;
   isFolded: boolean = false;
   isExpand: boolean = false;
-  employerName : any;
+  employerName: any;
   // dashboard$: Observable<EmployerDashboard>;
   logo = `data:image/png;base64,`;
   notificationList = [];
 
-  showNote:boolean = false;
+  userCova: any;
+
+  showNote: boolean = false;
 
   @ViewChild('reminderOutlet', { read: ViewContainerRef })
   reminderOutlet!: ViewContainerRef;
@@ -27,9 +36,7 @@ export class HeaderComponent {
   constructor(
     private viewContainerRef: ViewContainerRef,
     private renderer: Renderer2
-  ){}
-
- 
+  ) {}
 
   ngOnInit(): void {
     // this.dashboard$ = this.dashboardService.dashboardData();
@@ -40,6 +47,8 @@ export class HeaderComponent {
     // this.themeService.isExpandChanges.subscribe(
     //   (isExpand) => (this.isExpand = isExpand)
     // );
+
+    this.userCova = JSON.parse(sessionStorage.getItem('user')!)[0];
   }
 
   toggleFold() {
@@ -48,7 +57,6 @@ export class HeaderComponent {
   }
 
   toggleExpand() {
-
     // this.isFolded = false;
     this.isExpand = !this.isExpand;
     // this.themeService.toggleExpand(this.isExpand);
@@ -77,9 +85,8 @@ export class HeaderComponent {
     // this.disableContinue = true;
     this.renderer.addClass(this.reminderOutlet.element.nativeElement, 'open');
 
-    const componentRef = this.viewContainerRef.createComponent(
-      SideNavComponent
-    );
+    const componentRef =
+      this.viewContainerRef.createComponent(SideNavComponent);
 
     // componentRef.instance.data = data;
 
@@ -99,5 +106,4 @@ export class HeaderComponent {
 
     componentRef.changeDetectorRef.detectChanges();
   }
-
 }

@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
 import { environment } from 'src/app/environment/environment';
 
 @Injectable()
@@ -8,6 +9,9 @@ export class UserService {
 
   access = sessionStorage.getItem('access');
   refresh = sessionStorage.getItem('refresh');
+
+  userSubject = new BehaviorSubject({});
+  allUserSubject = new Subject();
 
   constructor(private http: HttpClient) {}
 
@@ -110,7 +114,7 @@ export class UserService {
         'X-Access-Token': this.access ? this.access : '',
         'X-Refresh-Token': this.refresh ? this.refresh : '',
       }),
-      observe: 'response',
+      // observe: 'response',
     });
   }
 

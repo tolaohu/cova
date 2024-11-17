@@ -14,14 +14,16 @@
 
             <div class="ms-3">
               <span class="small text-white">Welcome back!</span>
-              <h4 class="mb-0 text-white">Hello, Adebayo!</h4>
-              <span class="text-muted-small text-white"
-                >Adebayo.Adesanya@gmail.com</span
-              >
-              <p class="mb-0 mt-xl-4 mt-3 text-muted-small">
+              <h4 class="mb-0 text-white">
+                Hello, {{ userWallet?.firstName }}!
+              </h4>
+              <span class="text-muted-small text-white">{{
+                userWallet?.email
+              }}</span>
+              <!-- <p class="mb-0 mt-xl-4 mt-3 text-muted-small">
                 "Power up your web app with our sleek cova admin dashboard
                 template.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -42,7 +44,7 @@
                     data-purecounter-end="14000"
                     class="purecounter"
                     data-purecounter-duration="0"
-                    >$14.0 K</span
+                    >₦{{ userWallet?.bookedBalance }}.0 K</span
                   ></span
                 >
               </h4>

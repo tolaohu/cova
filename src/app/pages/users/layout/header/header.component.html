@@ -19,7 +19,7 @@
       [nzIcon]="'user'"
       nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
     ></nz-avatar>
-    <span class="text-secondary text-lg font-weight-bold">Welcome Adebayo</span>
+    <span class="text-secondary text-lg font-weight-bold">Welcome {{ userCova?.firstName }}</span>
   </div>
 </div>
 
@@ -111,8 +111,8 @@
 <ng-container *ngIf="showNote">
   <div class="drop-down-menu">
     <div class="info">
-      <h4 class="cova-text">Adebayo Adesanya</h4>
-      <p class="text-muted-small">Adebayo.Adesanya@gmail.com</p>
+      <h4 class="cova-text">{{ userCova?.firstName }} {{ userCova?.lastName }}</h4>
+      <p class="text-muted-small">{{ userCova?.email }}</p>
     </div>
 
     <div class="d-flex flex-column gap-2 mt-3">
